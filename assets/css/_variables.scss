@@ -1,0 +1,94 @@
+
+$colors: (
+    red: #D6453C,
+    yellow: #ffdd19,
+
+    navy: #004F92,
+    dark: #333333,
+    white: #FFFFFF,
+    black: #000000,
+    grey: #999999,
+    navy_dark: #151540, 
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+
+$pad: 15px;
+$pad-sm: 10px;
+$br: 8px; /*border-radius*/
+
+
+$trans: 0.3s ease-in-out;
+
+
+/*cart, checkout plus dalsi obecne stranky*/
+$header_content_space: 3em;
+
+
+$container_width: 1220px;
+$container_width2: 1380px;
+
+@mixin container{
+    @media (min-width: 1440px) {
+        .container {
+            max-width: $container_width;
+        }
+    }
+    @media (min-width: 1600px) {
+        .container {
+            max-width: $container_width2;
+        }
+    }
+}
+
+@mixin fcen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+$headerHeight: 6.75em;
+$headerHeightShrink: 4.5em;
+$headerHeight2: 4em;
+
+/*filter hover state only on desktop*/
+
+@mixin desktop {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+
+
+/*------------------------------respo----------------------------------*/
+/*------------------------------respo----------------------------------*/
+/*------------------------------respo----------------------------------*/
+
+
+@media (max-width: 1599px) {
+
+}
+
+@media (max-width: 1439px) {
+
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 575px ) {
+
+}

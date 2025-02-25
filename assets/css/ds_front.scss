@@ -1,0 +1,503 @@
+@import "_variables";
+
+/*fonts*/
+
+@font-face {
+    font-family: "Crimson";
+    src: url("/wp-content/themes/draftspot_shop_theme/assets/fonts/CrimsonPro-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Crimson";
+    src: url("/wp-content/themes/draftspot_shop_theme/assets/fonts/CrimsonPro-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("/wp-content/themes/draftspot_shop_theme/assets/fonts/DMSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("/wp-content/themes/draftspot_shop_theme/assets/fonts/DMSans-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("/wp-content/themes/draftspot_shop_theme/assets/fonts/DMSans-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "DMSans";
+    src: url("/wp-content/themes/draftspot_shop_theme/assets/fonts/DMSans-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    &.scroll{
+        overflow: hidden;
+    }
+}
+
+body {
+    font-size: 16px;
+    font-family: "DMSans";
+    font-weight: normal;
+    line-height: 1.5;
+    color: color(grey);
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "pnum" on, "lnum" on;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+main {
+    width: 100%;
+
+}
+
+/*texts*/
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.375;
+    font-weight: 400;
+    margin-bottom: 1em;
+    margin-bottom: 0.85em;
+    font-family: "Crimson";
+    color: color(dark);
+}
+h1 {
+    font-size: 4.5em;
+    margin-bottom: 40px;
+    line-height: 1.11;
+}
+h2 {
+    font-size: 3.5em;
+    margin-bottom: 1em;
+    line-height: 1.14;
+}
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 1.9em;
+    line-height: 1.33;
+    font-family: "DMSans";
+    &.ds_big{
+        font-size: 2.5em;
+        line-height: 1.2;
+        font-family: "Crimson";
+        text-transform: uppercase;
+        color: color(black);
+    }
+}
+h4 {
+    font-size: 1.0625em;
+    margin-bottom: 1em;
+}
+h5 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+h6 {
+    font-size: 1rem;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+
+.p_mid {
+    font-size: 1.125em;
+}
+.p_big {
+    font-size: 1.375em;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a,
+.btn, button, input {
+    cursor: pointer;
+    font-size: inherit;
+    transition: $trans;
+}
+
+.underline_link {
+    text-decoration: underline;
+    padding: 0;
+    line-height: 1;
+    border-radius: 0;
+    background-color: transparent;
+    color: color(dark);
+    border: 0;
+    transition: $trans;
+    display: inline-block;
+    transition: $trans;
+
+    &:hover {
+        color: color(green);
+        text-decoration: underline;
+        background: transparent;
+        border: 0;
+    }
+}
+
+
+@mixin btn-base {
+    padding: 0.75em 2.5em;
+    line-height: 1.5;
+    border-radius: 0.1875em;
+    background-color: color(navy_dark);
+    color: white;
+    border: 0px solid color(brown);
+    text-decoration: none;
+    transition: $trans;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    font-family: "DMSans";
+    overflow: hidden;
+    &:before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        height: 162.5%;
+        background-image: url(/wp-content/uploads/2024/03/wave.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        transition: 0.3s ease-out;
+    }
+    span{
+        position: relative;
+    }
+    &:hover {
+        color: white;
+        text-decoration: none;
+        background-color: color(navy_dark);
+        &:before{
+            top: -62.5%;
+        }
+    }
+}
+
+@mixin outline {
+    background-color: transparent;
+    color: color(navy_dark);
+    border: 1px solid color(navy_dark);
+
+    &:hover {
+        background: color(navy_dark);
+        color:white;
+        text-decoration: none;
+    }
+}
+
+button {
+    @include btn-base;
+}
+
+.btn {
+    @include btn-base;
+    font-size: 1em;
+}
+
+.btn_outline {
+    @extend .btn;
+    @include outline;
+}
+
+.btn_big {
+    @include btn_base;
+    font-size: 1.125em;
+    padding: 1em 2.5em;
+}
+.btn_big_outline {
+    @extend .btn_big;
+    @include outline;
+}
+
+.btn_small {
+    @include btn_base;
+    font-size: 0.938em;
+    padding: 0.7em 1em;
+}
+.btn_small_outline {
+    @extend .btn_small;
+    @include outline;
+}
+
+.btn_round {
+    font-size: 1em;
+    line-height: 1;
+    background: color(brown);
+    color: white;
+    font-family: "Crimson";
+    border-radius: 3px;
+    box-shadow: -10px 8px 20px rgba(0, 0, 0, 0.25);
+    @include fcen;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 36px;
+
+    &:hover {
+        color:white;
+        text-decoration: none;
+        background: color(dark);
+    }
+}
+
+.ds_blog_link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+    color: color(dark);
+    font-weight: 700;
+    img{
+        width: 2.5em;
+        height: 2.5em;
+        border-radius: 2.5em;
+        background-color: color(navy_dark);
+        padding: 0.6875em;
+        transition: 0.2s ease-out;
+        transform: none;
+    }
+    &:hover{
+        img{
+            background-color: color(navy);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.btn_arrow {
+    font-size: 1.125em;
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    transition: $trans;
+
+    &::after {
+        content: "";
+        background-color: white;
+        background-image: url("/shop_theme/wp-content/themes/draftspot_shop_theme/assets/img/chevron2.svg");
+        background-repeat: no-repeat;
+        background-size: 1em;
+        background-position: center;
+        vertical-align: middle;
+        margin-left: 0.6em;
+        display: inline-block;
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 50%;
+        color: color(dark);
+        transition: $trans;
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+        color: white;
+        &::after {
+            transform: translateX(0.3em);
+        }
+    }
+}
+
+.btn_cancel {
+    width: 2em;
+    height: 2em;
+    padding: 0;
+    background: unset;
+    background-image: url("/wp-content/themes/draftspot_shop_theme/assets/img/cancel_btn.svg");
+    background-repeat: no-repeat;
+    background-size: 1.25em;
+    background-position: center;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    border: 0;
+    border-radius: $br;
+
+    &:hover {
+        background-color: color(light);
+        background-image: url("/wp-content/themes/draftspot_shop_theme/assets/img/cancel_btn.svg");
+        background-repeat: no-repeat;
+        background-size: 1.25em;
+        background-position: center;
+    }
+}
+
+.btn_x_close {
+    @extend .btn_cancel;
+    width: 2em;
+    height: 2em;
+    background-image: url("/shop_theme/wp-content/themes/draftspot_shop_theme/assets/img/close.svg");
+    background-size: 1.8em;
+
+    &:hover {
+        background-image: url("/shop_theme/wp-content/themes/draftspot_shop_theme/assets/img/close.svg");
+        background-size: 1.8em;
+    }
+}
+.ds_page_header{
+    margin-top: 2em;
+}
+
+
+/*=================RESPO================*/
+/*=================RESPO================*/
+/*=================RESPO================*/
+
+@media only screen and (max-width: 1599px){
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 2.75em;
+    }
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.33;
+        &.ds_big{
+            font-size: 2em;
+        }
+    }
+    
+    @mixin btn-base {
+        padding: 0.75em 2.5em;
+    }
+
+    .btn {
+        @include btn-base;
+        font-size: 0.875em;
+    }
+}
+
+@media only screen and (max-width: 1439px){
+    body{
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 3.5em;
+    }
+    h2 {
+        font-size: 2.75em;
+    }
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.33;
+    }
+    
+    @mixin btn-base {
+        padding: 0.75em 2.5em;
+    }
+
+    .btn {
+        @include btn-base;
+        font-size: 0.875em;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2.25em;
+    }
+    h3 {
+        font-size: 1.125em;
+    }
+    
+    @mixin btn-base {
+        padding: 0.75em 2.5em;
+    }
+
+    .btn {
+        @include btn-base;
+        font-size: 0.875em;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    h1 {
+        font-size: 2.75em;
+    }
+    h2 {
+        font-size: 2.125em;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3{
+        &.ds_big{
+            font-size: 1.75em;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    body{
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    h3{
+        &.ds_big{
+            font-size: 1.75em;
+        }
+    }
+}
+
+
+
+@import "_bootstrap";
+@import "_header";
+@import "_footer";
+@import "_home";
+@import "_storage";
+@import "_swiper";
+@import "_contactFormseven";
+@import "_newsletter";
+@import "_searchbar";
+@import "_postCards";
+@import "_prodCardLarge";
+@import "_archive";
+@import "_accordion";
+@import "_breadcrumbs";
+@import "_contact";
+@import "_about_us";
+@import "_cap_tests";
+@import "_blog.scss";
+
+
+@import "_wooProdDetail";

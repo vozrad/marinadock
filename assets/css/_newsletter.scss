@@ -1,0 +1,125 @@
+@import "_variables";
+
+.newsletter {
+    color: color(dark);
+    z-index: 2;
+    margin-top: 60px;
+
+    &::before {
+        background-color: color(dark);
+        height: 77%;
+        bottom: 0;
+        top: unset;
+
+    }
+
+    .newsletter_card {
+        background: color(grey);
+        border-radius: $br;
+        padding: 2.5em 7em 1.6em;
+
+        .line_tit {
+            margin-top: 0.2em;
+            margin-bottom: 9px;
+            color: color(dark);
+            font-size:  1.5625em;
+        }
+
+        .wpcf7 {
+            form {
+                p {
+                    position: relative;
+                    display: flex;
+                    align-items: flex-end;
+
+                    label {
+                        font-size: 1.125em;
+                    }
+
+                    .wpcf7-email {
+                        margin-top: 0em;
+                        background-color: color(white);
+                        border-radius: 3px;
+                        margin-right: 0em;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.125em;
+                        color: color(dark);
+                        font-weight: 400;
+                        font-family: "DMSans";
+                        border: 0;
+                        cursor: auto;
+                        &::placeholder{
+                            font-size: 17px;
+                            color: color(dark);
+                            font-weight: 300;
+                            font-family: "DMSans";
+                        }
+                    }
+                    .wpcf7-submit {
+                        background: color(mid);
+                        margin-left: 0.375em;
+                        font-size: 1.125em;
+                        margin-top: 0;
+                        border-radius: 3px;
+                        color: color(grey);
+                        &:hover{
+                            background-color: color(dark);
+                            color: color(grey);
+                        }
+                    }
+
+                    .ajax-loader {
+                        position: absolute;
+                        right: 2em;
+                        bottom: 0.2em;
+                    }
+
+                    .wpcf7-not-valid-tip {
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*------------------------------respo----------------------------------*/
+/*------------------------------respo----------------------------------*/
+/*------------------------------respo----------------------------------*/
+
+
+@media (max-width: 1199px) {
+    .newsletter .newsletter_card .wpcf7 form p label {
+        font-size: 1em;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .newsletter .newsletter_card {
+        padding: 2.5em 2em 1.6em;
+    }
+}
+
+@media (max-width: 575px ) {
+    .newsletter .newsletter_card .wpcf7 form p {
+        flex-direction: column;
+        align-items: stretch;
+
+        br {
+            display: none;
+        }
+
+        .wpcf7-submit {
+            margin-left: 0;
+        }
+    }
+
+}

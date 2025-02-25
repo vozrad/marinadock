@@ -1,0 +1,24 @@
+@import "_variables";
+
+.ds_post_item{
+    padding: 10px;
+    &.swiper-slide{
+        padding: 0px;
+    }
+    .ds_post_thumbnail_img{
+        max-width: 100%;
+    }
+    .ds_post_title a{
+        font-size: 0.9em;
+        text-decoration: none;
+        color: black;
+    }
+    .ds_post_meta_tags span{
+        background: color(light);
+        border-radius: $br;
+        font-size: 0.875em;
+        line-height: 1;
+        padding: 0.4em;
+        margin-right: 5px;
+    }
+}

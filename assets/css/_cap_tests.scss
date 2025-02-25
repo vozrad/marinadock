@@ -1,0 +1,699 @@
+.ds_cap_section_prep {
+    padding-top: 5.5625em;
+    .ds_cap_section_wrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-bottom: 4em;
+    }
+    .ds_cap_section_con{
+        max-width: 52%;
+        width: 100%;
+        h2{
+            margin-bottom: 0.35em;
+        }
+        >p:first-of-type{
+            margin-bottom: 5.375em;
+        }
+        .ds_cap_section_items{
+            margin-bottom: 4em;
+            h3{
+                margin-bottom: 1em;
+                font-weight: 700;
+            }
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .ds_cap_section_img{
+        max-width: 36%;
+        width: 100%;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.ds_params_row{
+    margin-bottom: 1.625em;
+    .ds_params_img{
+        margin-right: 1.125em;
+        img{
+            width: 0.9375em;
+            height: 0.9375em;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+    .ds_params_label{
+        p{
+            margin-bottom: 0;
+            a{
+                &:hover{
+                    color: color(navy_dark);
+                }
+            }
+        }
+    }
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+}
+.ds_cap_section_offer{
+    margin-top: 9.5em;
+    .container{
+        position: relative;
+        .ds_krmidlo{
+            left: -13.5em;
+        }
+    }
+    .ds_cap_section_wrap{
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        .ds_cap_col{
+            max-width: 27.5%;
+            width: 100%;
+            padding: 2.5em 2em;
+            display: flex;
+            flex-direction: column;
+            h2{
+                margin-bottom: 0.5em;
+            }
+            h3{
+                margin-bottom: 0.5em;
+                font-weight: bold;
+            }
+            >p:first-of-type{
+                margin-bottom: 0.625em;
+            }
+            .ds_params_row{
+                margin-bottom: 1em;
+                &:last-of-type{
+                    margin-bottom: auto;
+                }
+            }
+            &:not(:first-child){
+                >p:last-of-type{
+                    margin-bottom: 0;
+                    color: color(grey);
+                    font-size: 0.75em;
+                    line-height: 2;
+                    font-style: italic;
+                    margin-top: 1em;
+                }
+            }
+            &:first-child{
+                p{
+                    margin-bottom: 2.5em;
+                }
+                a{
+                    color: white;
+                    align-self: flex-start;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+.ds_cap_section_popis{
+    padding-top: 7.5em;
+    .ds_cap_section_wrap{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4.5em 12em;
+        .ds_cap_col{
+            width: 100%;
+            h3{
+                font-weight: bold;
+                color: black;
+                margin-bottom: 0.33em;
+            }
+            >p{
+                margin-bottom: 2em;
+            }
+            .ds_bottom_text{
+                font-weight: bold;
+                margin-bottom: 0;
+            }
+            figure{
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.ds_cap_section_cats{
+    padding-top: 7.5em;
+    .container{
+        h2{
+            margin-bottom: 0.5em;
+        }
+        >p{
+            max-width: 36em;
+            margin-bottom: 1.25em;
+        }
+        .ds_cap_section_wrap{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16em;
+            h3{
+                font-size: 2.5em;
+                line-height: 1.6;
+                font-family: "Crimson";
+                margin-bottom: 0.33em;
+            }
+            .ds_params_wrap{
+                margin-bottom: 3em;
+                h4{
+                    font-size: 1.5em;
+                    font-weight: bold;
+                    font-family: "DMSans";
+                    line-height: 2.66;
+                    margin-bottom: 0;
+                }
+            }
+            figure{
+                img{
+                    border-radius: 0.4375em;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .ds_cap_col{
+                &:last-child{
+                    .ds_params_wrap{
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ds_cap_section_cenik{
+    padding-top: 6.125em;
+    padding-bottom: 10em;
+    .ds_lighthouse{
+        right: 0em;
+        bottom: -11em;
+    }
+    .container{
+        position: relative;
+        .ds_cap_section_wrap{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .ds_cap_col_price{
+                max-width: 49%;
+                width: 100%;
+                .ds_cap_banner_wrap{
+                    margin-bottom: 6em;
+                    align-items: center;
+                    .ds_cap_banner_text{
+                        font-weight: 700;
+                        margin-bottom: 0;
+                    }
+                    .ds_cap_banner_img{
+                        max-width: 9.5em;
+                        width: 100%;
+                    }
+                }
+                .ds_cap_cenik_wrap{
+                    h2{
+                        margin-bottom: 0.5em;
+                    }
+                    .ds_params_item{
+                        margin-bottom: 2.125em;
+                        h3{
+                            line-height: 2.66;
+                            font-weight: bold;
+                        }
+                        .ds_params_row{
+                            margin-bottom: 0;
+                            padding-left: 1.25em;
+                            padding-right: 1.25em;
+                            justify-content: space-between;
+                            color: black;
+                            .ds_params_label{
+                                max-width: calc(100% - 100px);
+                            }
+                            .ds_params_value{
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .ds_cenik_bottom{
+                    .ds_cenik_bottom_italic{
+                        font-style: italic;
+                    }
+                    .ds_cenik_bottom_strong{
+                        font-weight: bold;
+                        margin-bottom: 0;
+                        color: black;
+                    }
+                }
+            }
+            .ds_side_form{
+                margin-top: 0;
+                .ds_form_side{
+                    margin-bottom: 7.5em;
+                }
+                h2{
+                    color: black;
+                    margin-bottom: 0.5em;
+                }
+                >p{
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.ds_no_price_section_wrap{
+    p{
+        max-width: 36em;
+        font-size: 1.25em;
+    }
+}
+
+.page-template-ds_finance{
+
+    .ds_cap_section_prep {
+        .container{
+            position: relative;
+        }
+        .ds_cap_section_con{
+            max-width: 52%;
+        }
+    }
+}
+
+.ds_cap_section_wrapp{
+    padding-top: 5.5em;
+    h2{
+        margin-bottom: 0.35em;
+    }
+    p{
+        max-width: 46em;
+    }
+    .ds_cap_section_items{
+        flex-wrap: wrap;
+        margin-top: 3em;
+        .ds_partners_item{
+            margin-bottom: 3em;
+            img{
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+}
+.ds_cap_section_prep{
+    .ds_cap_section_con{
+        .ds_cap_section_wrapp_finance{
+            .ds_cap_section_items{
+                margin-bottom: 0!important;
+            }
+        }
+    }
+}
+
+.ds_cap_section_wrapp_poj{
+    .ds_cap_section_items{
+        gap: 3em;
+    }
+}
+
+.ds_cap_section_wrapp_pojisteni{
+    .ds_cap_section_items{
+        margin-top: 0;
+        gap: 2em;
+        .ds_partners_item{
+            margin-bottom: 0;
+            img{
+                height: 100px;
+            }
+        }
+    }
+}
+
+.ds_cap_section_prep_serv{
+    .ds_lighthouse{
+        bottom: 0;
+    }
+    .ds_cap_section_con{
+        .ds_cap_section_items{
+            margin-bottom: 1.5em!important;
+        }
+    }
+}
+
+.ds_cap_section_cena{
+    .ds_cap_col_price{
+        .ds_cap_cenik_wrap{
+            margin-bottom: 3.125em;
+            .ds_params_row{
+                margin-bottom: 0;
+                padding-left: 1.25em;
+                padding-right: 1.25em;
+                justify-content: space-between;
+                color: black;
+                .ds_params_label{
+                    max-width: calc(100% - 100px);
+                }
+                .ds_params_value{
+                    text-align: right;
+                }
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+            h3{
+                font-weight: bold;
+            }
+        }
+    }
+    .ds_side_map{
+        max-width: 43%;
+        width: 100%;
+        position: sticky;
+        top: 0em;
+        padding-top: 5.4em;
+        iframe{
+            display: block;
+            height: 100%;
+            min-height: 25em;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1599px){
+    .ds_cap_section_prep {
+        .ds_cap_section_con{
+            max-width: 60%;
+        }
+    }
+    .ds_cap_section_offer {
+        margin-top: 7em;
+        .container{
+            .ds_krmidlo{
+                left: -9.5em;
+            }
+        }
+    }
+    .ds_cap_section_offer {
+        .ds_cap_section_wrap{
+            .ds_cap_col{
+                max-width: 30%;
+            }
+        }
+    }
+    .ds_cap_section_popis {
+        padding-top: 7em;
+        .ds_cap_section_wrap{
+            gap: 2em 8em;
+        }
+    }
+    .ds_cap_section_cats {
+        padding-top: 7em;
+        .container{
+            .ds_cap_section_wrap{
+                gap: 10em;
+                h3{
+                    font-size: 2.25em;
+                }
+            }
+        }
+    }
+    .ds_cap_section_cenik{
+        padding-top: 4em;
+        padding-bottom: 6em;
+        .container{
+            .ds_cap_section_wrap{
+                .ds_cap_col_price{
+                    max-width: 54%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1439px){
+    .ds_cap_section_prep{
+        .ds_cap_section_con{
+            >p{
+                margin-bottom: 3.375em!important;
+            }
+            .ds_cap_section_items{
+                margin-bottom: 3em;
+            }
+        }
+    }
+    .ds_params_row {
+        margin-bottom: 1.25em;
+    }
+    .ds_cap_section_wrapp {
+        padding-top: 4.5em;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .ds_cap_section_wrapp_finance{
+        .ds_cap_section_items{
+            flex-wrap: wrap;
+            margin-top: 0em;
+            .ds_partners_item{
+                margin-bottom: 0em;
+                img{
+                    width: 200px;
+                    height: 170px;
+                }
+            }
+        }
+    }
+    .ds_cap_section_prep{
+        .ds_cap_section_con{
+            max-width: 52%;
+        }
+    }
+    .ds_cap_section_offer{
+        .ds_cap_section_wrap{
+            .ds_cap_col{
+                max-width: 32%;
+            }
+        }
+    }
+    .ds_cap_section_popis {
+        .ds_cap_section_wrap{
+            gap: 1em 5em;
+        }
+    }
+    .ds_cap_section_cats {
+        .container{
+            .ds_cap_section_wrap{
+                gap: 6em;
+                h3{
+                    font-size: 1.75em;
+                }
+                .ds_params_wrap {
+                    h4{
+                        font-size: 1.25em;
+                    }
+                }
+            }
+        }
+    }
+    .ds_cap_section_cenik{
+        .ds_lighthouse{
+            bottom: -6em;
+        }
+    }
+    .ds_cap_section_wrapp_pojisteni{
+        .ds_cap_section_items{
+            .ds_partners_item{
+                img{
+                    height: 100px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .ds_cap_section_prep {
+        .ds_cap_section_wrap{
+            flex-direction: column;
+            gap: 4em;
+            .ds_cap_section_con{
+                max-width: 100%;
+            }
+            .ds_cap_section_wrap{
+                max-width: 40%;
+                width: 100%;
+            }
+        }
+    }
+    .ds_cap_section_offer{
+        margin-top: 5em;
+        .container{
+            .ds_krmidlo{
+                left: -7em;
+                top: 9em;
+            }
+        }
+        .ds_cap_section_wrap{
+            flex-direction: column;
+            row-gap: 3em;
+            .ds_cap_col{
+                max-width: 100%;
+            }
+        }
+    }
+    .ds_cap_section_popis {
+        padding-top: 5em;
+        .ds_cap_section_wrap{
+            gap: 1em 2.5em;
+        }
+    }
+    .ds_cap_section_cats {
+        padding-top: 5em;
+    }
+    .ds_cap_section_cenik{
+        .container{
+            .ds_cap_section_wrap{
+                .ds_cap_col_price{
+                    .ds_cap_banner_wrap{
+                        margin-bottom: 3em;
+                        .ds_cap_banner_img{
+                            max-width: 7.5em;
+                        }
+                    }
+                }
+                .ds_side_form{
+                    .ds_form_side{
+                        margin-bottom: 4.5em;
+                    }
+                }
+            }
+        }
+    }
+    .ds_cap_section_cena{
+        .ds_side_map{
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .ds_cap_section_cats{
+        .container{
+            .ds_cap_section_wrap{
+                gap: 3em;
+            }
+        }
+    }
+
+    .ds_cap_section_cenik{
+        .container{
+            .ds_cap_section_wrap{
+                flex-direction: column;
+                gap: 4em;
+                .ds_cap_col_price{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .ds_cap_section_popis{
+        .ds_cap_section_wrap{
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            .ds_cap_col:last-child{
+                margin-top: 2em;
+            }
+        }
+    }
+    .ds_cap_section_cats{
+        .container{
+            .ds_cap_section_wrap{
+                grid-template-columns: repeat(1, minmax(0, 1fr));
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .ds_cap_section_cats{
+        .container{
+            .ds_cap_section_wrap{
+                gap: 2em;
+                .ds_params_wrap{
+                    margin-bottom: 1.5em;
+                }
+            }
+        }
+    }
+    .ds_cap_section_offer{
+        .container{
+            .ds_krmidlo{
+                left: -4.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .ds_cap_section_prep{
+        .ds_cap_banner_img{
+            max-width: 50%;
+        }
+    }
+    .ds_cap_section_offer {
+        margin-top: 3em;
+        .container{
+            .ds_cap_section_wrap{
+                .ds_cap_col{
+                    &:first-child{
+                        padding: 0;
+                    }
+                }
+            }
+            .ds_krmidlo{
+                display: none;
+            }
+        }
+    }
+    .ds_cap_section_cenik {
+        padding-bottom: 3em;
+        .ds_lighthouse{
+            bottom: -4em;
+        }
+    }
+    .ds_cap_section_cena{
+        .ds_cap_col_price{
+            .ds_cap_cenik_wrap{
+                .ds_params_row{
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

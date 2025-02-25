@@ -1,0 +1,117 @@
+.ds_about_section_content{
+    padding-top: 6.5em;
+    padding-bottom: 6.5em;
+}
+.ds_about_section_gal{
+    padding-bottom: 11.4em;
+    .ds_lighthouse{
+        bottom: -11em;
+    }
+    &.ds_about_section_gal_serv{
+        .ds_lighthouse{
+            bottom: 0em;
+        }
+    }
+    .container{
+        figure{
+            height: 100%;
+            border-radius: 0.4375em;
+            overflow: hidden;
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        .ds_about_gal_wrap{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.125em;
+            position: relative;
+        }
+        .ds_about_gal_col2{
+            display: grid;
+            gap: 2.125em;
+            grid-template-rows: 1fr 1fr;
+        }
+        .ds_about_gal_row2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.125em;
+            .ds_about_gal_subcol{
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1599px){
+    .ds_about_section_content{
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
+    .ds_about_section_gal{
+        padding-bottom: 8em;
+    }
+}
+
+@media only screen and (max-width: 1199px){
+    .ds_about_section_gal{
+        .ds_lighthouse{
+            bottom: -6em;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .ds_about_section_gal{
+        padding-bottom: 5em;
+        .ds_lighthouse{
+            bottom: -6em;
+        }
+        .container{
+            .ds_about_gal_wrap{
+                gap: 1.5em;
+            }
+            .ds_about_gal_col2{
+                gap: 1.5em;
+            }
+            .ds_about_gal_row2{
+                gap: 1.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .ds_about_section_gal{
+        .container{
+            .ds_about_gal_wrap{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .ds_about_section_gal{
+        padding-bottom: 3em;
+        .ds_lighthouse{
+            bottom: -4em;
+        }
+        .container{
+            .ds_about_gal_wrap{
+                gap: 1.125em;
+                grid-template-rows: 1fr 3fr;
+            }
+            .ds_about_gal_col2{
+                gap: 1.125em;
+                grid-template-rows: 1fr 2fr;
+            }
+            .ds_about_gal_row2{
+                grid-template-columns: 1fr;
+                gap: 1.125em;
+            }
+        }
+    }
+}

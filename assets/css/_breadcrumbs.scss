@@ -1,0 +1,42 @@
+$spacing: 0.3em;
+
+.ds_breadcrumb_wrapper {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+
+    .breadcrumb {
+        color: color(grey);
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        a {
+            margin-right: $spacing;
+            text-decoration: none;
+            color: color(grey);
+
+            &:first-child {
+                width: 1.4em;
+                height: 1.4em;
+                background-image: url("/shop_theme/wp-content/themes/draftspot_shop_theme/assets/img/Home.svg");
+                background-position: center;
+                background-size: 1em;
+                background-repeat: no-repeat;
+                display: inline-block;
+                color: transparent;
+            }/**/
+        }
+
+        /*.breadcrumb_arrow {
+            width: 1.4em;
+            height: 1.4em;
+            background-image: url("/wp-content/themes/draftspot_theme/assets/img/chevron2.svg");
+            background-position: center;
+            background-size: 1.3em;
+            background-repeat: no-repeat;
+            display: inline-block;
+            opacity: 0.3;
+            margin-right: $spacing;
+        }*/
+    }
+}

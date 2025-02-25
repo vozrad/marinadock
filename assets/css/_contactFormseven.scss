@@ -1,0 +1,55 @@
+.wpcf7 {
+    .wpcf7-form {
+        .wpcf7-form-control-wrap {
+            input, textarea {
+                width: 100%;
+            }
+        }
+    
+
+        .req-input {
+            color: color(red);
+        }
+    
+        .wpcf7-submit {
+            float: right;
+            margin-top: 0.5em;
+        }
+    
+        .wpcf7-response-output {
+            border-radius: $br;
+            color: white;
+            border: 0!important;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0.5em 1em;
+        }
+    
+        &.invalid {
+            .wpcf7-response-output {
+                background: color(red);
+            }
+        }
+    
+        &.sent {
+            .wpcf7-response-output {
+                background: color(green);
+            }
+        }
+    
+        &.unaccepted {
+            .wpcf7-response-output {
+                background: color(red);
+            }
+        }
+
+        .input_hidden {
+            opacity: 0;
+            overflow: hidden;
+            height: 0;
+            width: 0;
+            display: block;
+        }
+    }
+}
+
